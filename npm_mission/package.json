@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "react": "^19.1.0",
