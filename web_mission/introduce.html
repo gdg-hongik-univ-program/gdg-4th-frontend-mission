@@ -3,33 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>요구사항 페이지</title>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      gap: 20px;
-    }
-    img {
-      width: 150px;
-      height: auto;
-    }
-    input {
-      padding: 8px;
-      font-size: 16px;
-    }
-    button {
-      padding: 8px 12px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="introduce.css">
 </head>
 <body>
   <div class="container">
@@ -37,7 +11,7 @@
     <img src="logoyogo-1-80.jpg" alt="본인 이미지" />
 
     <!-- 인삿말 버튼 -->
-    <button type ="button" onclick="console.log('안녕하세요!')">인사하기</button>
+    <button type="button" onclick="console.log('안녕하세요! 저는 김수진입니다!')">인사하기</button>
 
     <!-- 입력값 출력 form -->
     <form onsubmit="handleSubmit(event)">
@@ -46,12 +20,6 @@
     </form>
   </div>
 
-  <script>
-    function handleSubmit(event) {
-      event.preventDefault();
-      const input = document.getElementById('userInput').value;
-      console.log(input);
-    }
-  </script>
+  <script src="form.js"></script>
 </body>
 </html>
