@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나를 소개합니다!</title>
+  <link rel="stylesheet" href="gdg_proj_week1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>안녕하세요! 저는 문선영입니다.</h1>
+    <img src="my_photo.jpeg" alt="내 사진" class="profile-photo">
+
+    <p>홍익대학교 컴퓨터공학과 재학중</p>
+    <p>25세</p>
+
+    <ul>
+      <li>좋아하는 동물: 강아지</li>
+      <li>좋아하는 영화: 이터널 션샤인</li>
+      <li>좋아하는 음식: 부대찌개</li>
+    </ul>
+
+    <button onclick="sayHello()">인사하기</button>
+
+    <form onsubmit="printInput(event)">
+      <input type="text" id="userInput" placeholder="무엇이든 입력해보세요" required>
+      <button type="submit">입력 전송</button>
+    </form>
+  </div>
+
+  <script>
+    function sayHello() {
+      console.log("안녕하세요!");
+    }
+
+    function printInput(event) {
+      event.preventDefault();
+      const inputValue = document.getElementById("userInput").value;
+      console.log("입력한 값:", inputValue);
+    }
+  </script>
+</body>
+</html>
