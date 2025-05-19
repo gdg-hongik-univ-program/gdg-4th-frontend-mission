@@ -1,17 +1,28 @@
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 20px;
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif; /* 기본 폰트 설정 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: theme('colors.text-main'); /* 기본 텍스트 색상 */
 }
 
-h1 {
-  color: #2c3e50;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 700;
+/* 커스텀 스크롤바 (선택 사항) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.light-bg');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.brand-primary.light');
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.brand-primary.DEFAULT');
 }

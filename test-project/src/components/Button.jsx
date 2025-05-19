@@ -1,29 +1,19 @@
+// src/Button.jsx
 import React from 'react';
 
-const Button = () => {
-  const handleClick = () => {
-    window.open('https://gebalhoso.tistory.com/', '_blank');
-  };
+function Button({ onClick, children, className = '', type = 'button', ...rest }) {
+  const baseStyle = "font-medium py-2 px-4 rounded-md shadow transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2";
 
   return (
-    <button 
-      onClick={handleClick} 
-      style={{ 
-        padding: '10px 20px', 
-        fontSize: '16px', 
-        cursor: 'pointer',
-        backgroundColor: '#4a90e2',
-        color: 'white',
-        border: 'none',
-        borderRadius: '5px',
-        transition: 'background-color 0.3s'
-      }}
-      onMouseOver={(e) => e.target.style.backgroundColor = '#357abd'}
-      onMouseOut={(e) => e.target.style.backgroundColor = '#4a90e2'}
+    <button
+      type={type}
+      onClick={onClick}
+      className={`${baseStyle} ${className}`}
+      {...rest}
     >
-      내 블로그로 이동하기
+      {children}
     </button>
   );
-};
+}
 
 export default Button;
