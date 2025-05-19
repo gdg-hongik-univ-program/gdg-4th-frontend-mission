@@ -1,24 +1,25 @@
 // src/components/Button.jsx
 import React from 'react';
 
-export default function Button() {
-  const goToBlog = () => {
-    window.location.href = 'https://velog.io/@myjxjx813/posts';
-  };
-
+function Button({ onClick, text }) {
   return (
     <button
-      type="button"
-      onClick={goToBlog}
+      onClick={onClick}
       style={{
         padding: '10px 20px',
+        margin: '5px',
         fontSize: '16px',
         cursor: 'pointer',
-        borderRadius: '4px',
-        border: '1px solid #333'
+        backgroundColor: '#007BFF',
+        color: '#fff',
+        border: 'none',
+        borderRadius: '5px'
       }}
     >
-      내 블로그로 이동
+      {text}
     </button>
   );
 }
+
+export default Button;
+
