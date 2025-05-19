@@ -69,7 +69,7 @@ function Counter() {
         <div className="mb-10">
           <Button
             onClick={handleIncrementValue}
-            className="w-full bg-brand-primary-DEFAULT hover:bg-brand-primary-dark text-text-on-brand text-lg py-3.5 shadow-lg hover:shadow-custom-lg transform hover:-translate-y-0.5 focus:ring-brand-primary-light focus:ring-offset-card-bg"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-3.5 shadow-lg hover:shadow-custom-lg transform hover:-translate-y-0.5 focus:ring-blue-400 focus:ring-offset-card-bg"
           >
             <PlusIcon className="w-6 h-6 mr-2.5" />
             값 증가
@@ -90,8 +90,8 @@ function Counter() {
                 className={`
                   min-w-[60px] sm:min-w-[65px] text-sm sm:text-base py-2 px-3 sm:px-4
                   ${incrementAmount === option
-                    ? 'bg-brand-secondary-DEFAULT text-text-on-brand ring-brand-secondary-light hover:bg-brand-secondary-dark focus:ring-offset-card-bg' // 활성화
-                    : 'bg-gray-100 text-text-muted hover:bg-gray-200 hover:text-text-main focus:ring-gray-300 focus:ring-offset-card-bg' // 비활성화
+                    ? 'bg-blue-600 text-white ring-2 ring-blue-400 ring-offset-2 shadow-md hover:bg-blue-700 focus:ring-offset-card-bg' 
+                    : 'bg-gray-100 text-text-muted hover:bg-gray-200 hover:text-text-main focus:ring-gray-300 focus:ring-offset-card-bg' 
                   }
                 `}
               >
