@@ -180,3 +180,6 @@ TailwindCSS 문법에 대해서는 위 링크를 통해서 공부할 수 있어�
         ├── index.css
         └── main.jsx
 ```
+## 과제 제출
+
+- Velog 블로그 주소: [https://velog.io/@ekfgo0/posts](https://velog.io/@ekfgo0/posts)
