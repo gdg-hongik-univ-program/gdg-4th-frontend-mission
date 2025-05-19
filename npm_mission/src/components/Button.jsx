@@ -1,12 +1,10 @@
 import React from "react";
 
-function Button() {
-  const handleClick = () => {
-    window.location.href = "https://velog.io/@mminn94/posts";
-  };
-
+function Button({label, onClick, style={}}) {
+ 
   const buttonStyle = {
     padding: "12px 24px",
+    margin: "12px",
     backgroundColor: "#4CAF50",
     color: "white",
     border: "none",
@@ -14,6 +12,7 @@ function Button() {
     cursor: "pointer",
     fontSize: "16px",
     transition: "background-color 0.3s",
+    ...style,
   };
 
   const hoverStyle = {
@@ -25,9 +24,9 @@ function Button() {
       style={buttonStyle}
       onMouseOver={(e) => (e.target.style.backgroundColor = hoverStyle.backgroundColor)}
       onMouseOut={(e) => (e.target.style.backgroundColor = buttonStyle.backgroundColor)}
-      onClick={handleClick}
+      onClick={onClick}
     >
-      블로그로 이동하기
+      {label}
     </button>
   );
 }
