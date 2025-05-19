@@ -1,7 +1,5 @@
 # 2025-1-mission-course-frontend-week2
 
-https://velog.io/@pastelblue0721/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%9E%85%EB%AC%B8%EC%9E%90%EB%93%A4%EC%97%90%EA%B2%8C-%EC%A2%8B%EC%9D%80-%EB%A7%81%ED%81%AC-%EB%AA%A8%EC%9D%8C-React-%EC%9C%84%EC%A3%BC
-
 # GDG Hongik Univ. 프로젝트 트랙 4기 미션 코스
 
 ---
