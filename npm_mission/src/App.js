@@ -1,15 +1,30 @@
-// src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Button from './components/Button';  // 아까 만든 Button 컴포넌트를 가져옵니다
 
 function App() {
+  const [count, setCount] = useState(0);
+  const [increment, setIncrement] = useState(1);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My React App!</h1>
-        <Button />
-      </header>
+    <div className="container">
+      <div className="title">GDG 카운터 예제</div>
+      <div className="count">{count}</div>
+
+      <div className="increment-buttons">
+        {[1, 10, 100].map((val) => (
+          <button
+            key={val}
+            className="round-button"
+            onClick={() => setIncrement(val)}
+          >
+            {val}
+          </button>
+        ))}
+      </div>
+
+      <button className="full-width-button" onClick={() => setCount(count + increment)}>
+        증가
+      </button>
     </div>
   );
 }
