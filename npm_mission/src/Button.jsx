@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 const Button = () => {
     const handleClick = () => {
@@ -10,4 +10,25 @@ const Button = () => {
     );
 };
 
-export default Button;
+export default Button; */
+
+export default function Button({ value, onClick }) {
+  return (
+    <button onClick={() => onClick(value)} style={styles.button}>
+      {value}
+    </button>
+  );
+}
+
+const styles = {
+  button: {
+    margin: '8px',
+    padding: '16px 32px',
+    fontSize: '18px',
+    borderRadius: '20px',
+    backgroundColor: 'black',
+    color: 'white',
+    border: 'none',
+    cursor: 'pointer',
+  }
+};
