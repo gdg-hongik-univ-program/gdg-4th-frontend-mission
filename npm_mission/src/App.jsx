@@ -38,9 +38,6 @@ import './App.css'
 }
 export default App */ 
 
-import { useState } from "react";
-import Button from "./Button";
-
 export default function App() {
   const [count, setCount] = useState(0);
   const [increment, setIncrement] = useState(1);
