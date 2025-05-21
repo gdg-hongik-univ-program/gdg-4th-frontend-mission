@@ -47,8 +47,6 @@ export function Counter() {
                 값 초기화
             </button>
             </div>
-           
-
         </div>
     )
 }
