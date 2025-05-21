@@ -1,12 +1,16 @@
 
 export default function Button({ value, onClick }) {
   return (
-    <button onClick={() => onClick(value)} style={styles.button}>
-      {value}
+    <button 
+    onClick={() => onClick(value)}
+      className="m-2 px-8 py-4 text-lg rounded-[10px] bg-black text-white border-none cursor-pointer"
+      >
+    {value}
     </button>
   );
 }
 
+/*
 const styles = {
   button: {
     margin: '8px',
@@ -19,4 +23,4 @@ const styles = {
     cursor: 'pointer',
   }
 };
-
+*/

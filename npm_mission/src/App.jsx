@@ -3,6 +3,7 @@ import Button from './Button';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './index.css'; 
 
 
 export default function App() {
@@ -15,13 +16,12 @@ export default function App() {
 
   const handleSetIncrement = (value) => {
     setIncrement(value);
-  };
-
+  }; 
   return (
-    <div style={styles.container}>
-      <h1>GDG 카운터 예제</h1>
-      <h2>{count}</h2>
-      <div style={styles.row}>
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <h1 className="text-2xl font-bold mb-2">YJ 카운터 </h1>
+      <h2 className="text-xl mb-4">{count}</h2>
+      <div className="flex justify-center my-4 gap-2">
         {[1, 10, 100].map((num) => (
           <Button key={num} value={num} onClick={handleSetIncrement} />
         ))}
@@ -31,7 +31,7 @@ export default function App() {
   );
 }
 
-const styles = {
+/* const styles = {
   container: {
     textAlign: "center",
     marginTop: "40px"
@@ -43,4 +43,4 @@ const styles = {
     marginBottom: "16px"
   }
 };
-
+*/
