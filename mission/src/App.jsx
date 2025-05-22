@@ -2,14 +2,15 @@ import { Routes, Route, Link } from 'react-router-dom'
 import MainPage from './pages/MainPage'
 import AxiosPage from './pages/AxiosPage'
 import UseEffectPage from './pages/UseEffectPage'
+import './App.css' // CSS 연결
 
 function App() {
   return (
-    <div style={{ padding: '2rem' }}>
+    <div className="container">
       {/* 공통 네비게이션 */}
-      <nav style={{ marginBottom: '1rem' }}>
-        <Link to="/" style={{ marginRight: '1rem' }}>Main</Link>
-        <Link to="/axios" style={{ marginRight: '1rem' }}>Axios</Link>
+      <nav className="nav">
+        <Link to="/">Main</Link>
+        <Link to="/axios">Axios</Link>
         <Link to="/useeffect">UseEffect</Link>
       </nav>
 
