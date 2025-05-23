@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 자기소개</title>
+    <link rel="stylesheet" href="introduce.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <img src="images/profile.jpg" alt="프로필 사진" class="profile-image">
+            <h1>윤서준</h1>
+            <p class="description">안녕하세요 22 학번 24 살 윤서준 이라고 합니다 잘 부탁드립니다.</p>
+        </div>
+        <div class="interaction-section">
+            <button onclick="sayHello()" class="greeting-btn">인사하기</button>
+            
+            <form onsubmit="handleSubmit(event)" class="message-form">
+                <input type="text" placeholder="메시지를 입력하세요" required>
+                <button type="submit">전송</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
