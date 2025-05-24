@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+        body{
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+           
+        }
+
+        nav{
+            background-color: #0077b6;
+            padding: 20px 0;
+        }
+
+        nav a{ /* 태그 내부에 있는 모든 <a> 태그 적용> */
+            color: white; 
+            margin: 0 40px;
+            text-decoration: none; 
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover{
+            color: #dce0e3;
+        }
+
+        nav a.active{
+            border-bottom: 2px solid #18bc9c;
+            padding-bottom: 4px;
+        }
+        
+        .intro{
+            background-color: #ebebeb;
+            color: black;
+            padding: 100px 20px;
+        }
+        .intro img {
+            width: 250px;
+            border-radius: 50%;
+        }
+
+        .intro h1{
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+        }
+
+        .intro p{
+            font-family: 'Arial', sans-serif;
+        }
+
+        .divider{
+            margin: 20px auto;
+            width: 60px;
+            height: 3px;
+            background-color: white;
+        }
+
+        .section{
+            padding: 60px 20px;
+        }
+
+        .section h2{
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        
+        input{
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button{
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #023047;   
+            color: white;
+            border-color: none;
+            border-radius: 5%;
+            
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 20px;
+            padding: 10px;
+            background-color:#c8c7c7 ;
+
+        }
+
+        .hello{
+            padding: 20px;
+
+        }
+
+  
