@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function AxiosPage() {
   const [users, setUsers] = useState([]);
   const [inputName, setInputName] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/users')
@@ -35,7 +37,8 @@ function AxiosPage() {
       <button onClick={handleSearch}>검색</button>
 
       <div>
-        <button onClick={() => window.location.href = '/'}>홈으로</button>
+      <button onClick={() => navigate("/")}>Go to Main Page</button>
+      <button onClick={() => navigate("/useeffect")}>Go to UseEffect Page</button>
       </div>
     </div>
   );
