@@ -12,7 +12,6 @@ function Counter() {
     setter(true);
     setTimeout(() => setter(false), 350); 
   };
-
   const handleIncrementValue = useCallback(() => {
     setCurrentValue(prevValue => {
       triggerPulse(setIsCurrentValuePulsing);
