@@ -23,7 +23,7 @@ function UseEffectPage() {
       <div>
         <div>
           {posts.map((post) => (
-            <div key={post.id} className='border p-4 m-2'>
+            <div key={post.id}>
               <p>유저번호 {post.userId}</p>
               <p>글번호 {post.id}</p>
               <p>제목 {post.title}</p>
