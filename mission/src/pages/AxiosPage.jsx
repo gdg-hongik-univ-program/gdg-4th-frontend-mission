@@ -27,8 +27,10 @@ function AxiosPage() {
     <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
       <h1 className="text-2xl font-bold">Axios Page</h1>
       <div className="space-x-2">
-        <button onClick={() => navigate("/")}>Main Page</button>
-        <button onClick={() => navigate("/useeffect")}>UseEffect Page</button>
+        <button
+          className="rounded-lg border border-transparent px-4 py-2 text-base font-medium bg-gray-200 hover:border-gray-400 transition" onClick={() => navigate("/")}>Main Page</button>
+        <button
+          className="rounded-lg border border-transparent px-4 py-2 text-base font-medium bg-gray-200 hover:border-gray-400 transition" onClick={() => navigate("/useeffect")}>UseEffect Page</button>
       </div>
 
       {/* 미션 기능 추가 영역 */}
