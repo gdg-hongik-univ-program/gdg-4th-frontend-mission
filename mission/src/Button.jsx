@@ -1,7 +1,7 @@
 function Button({ value, onClick }) {
   return (
     <button
-      className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+      className="bg-blue-500 text-white rounded"
       onClick={onClick}
     >
       +{value}
