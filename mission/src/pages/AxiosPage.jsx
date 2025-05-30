@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import axiosInstance from '../httpCount';
 
 function AxiosPage() {
   const [users, setUsers] = useState([]);
@@ -8,7 +9,7 @@ function AxiosPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/users')
+    axiosInstance.get('https://jsonplaceholder.typicode.com/users')
       .then((response) => {
         setUsers(response.data);
       })
