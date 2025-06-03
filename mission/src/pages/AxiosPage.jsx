@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+
 function Mission2() {
     const [data, setData] = useState([]); // 받아온 데이터를 저장할 변수
     const [inputUser, setinputUser] = useState(''); // input값을 저장할 변수
@@ -22,9 +23,6 @@ function Mission2() {
     .then(response => {
       console.log(response.data);
       setData(response.data)}) // 콘솔에 받아온 데이터 출력, 데이터 저장
-    .catch(error => {
-      {console.error(error)};
-    });
   };
 
     const showUser = () => {

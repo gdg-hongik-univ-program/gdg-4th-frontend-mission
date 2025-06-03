@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import JotaiPage from './pages/JotaiPage.jsx';
 import Home from './pages/MainPage.jsx';
 import Mission2 from './pages/AxiosPage.jsx';
 import Mission3 from './pages/UseEffectPage.jsx';
@@ -21,6 +22,9 @@ const navigate = useNavigate();
       <button onClick={() => { navigate(-1); }}>
        이전 페이지로 이동하기
       </button>
+      <button onClick={() => { navigate('/Jotai'); }}>
+       조타이 페이지로 이동하기
+      </button>
     </div>
   );
 }
@@ -33,6 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/axios" element={<Mission2 />} />
           <Route path="/useeffect" element={<Mission3 />} />
+          <Route path='/Jotai' element={<JotaiPage />}/>
         </Routes>
     </div>
   )
